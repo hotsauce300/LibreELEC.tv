@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# SPDX-License-Identifier: GPL-2.0-or-later
+# Copyright (C) 2019-present Team LibreELEC (https://libreelec.tv)
+
+# Configure frequency scaling properties
+for policy in $(find /sys/devices/system/cpu/cpufreq -name ondemand 2>/dev/null) ; do
+  echo 1 > $policy/io_is_busy
+  echo 50 > $policy/up_threshold
+  echo 100000 > $policy/sampling_rate
+  echo 50 > $policy/sampling_down_factor
+done

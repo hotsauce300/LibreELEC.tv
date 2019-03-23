@@ -1,0 +1,14 @@
+diff --git a/driver/product/kernel/drivers/gpu/arm/midgard/mali_kbase_core_linux.c b/driver/product/kernel/drivers/gpu/arm/midgard/mali_kbase_core_linux.c
+index 9dc3ba1..f5fc05b 100644
+--- a/driver/product/kernel/drivers/gpu/arm/midgard/mali_kbase_core_linux.c
++++ b/driver/product/kernel/drivers/gpu/arm/midgard/mali_kbase_core_linux.c
+@@ -4213,9 +4213,7 @@ static const struct dev_pm_ops kbase_pm_ops = {
+ 
+ #ifdef CONFIG_OF
+ static const struct of_device_id kbase_dt_ids[] = {
+-	{ .compatible = "arm,malit6xx" },
+ 	{ .compatible = "arm,mali-bifrost" },
+-	{ .compatible = "arm,mali-midgard" },
+ 	{ /* sentinel */ }
+ };
+ MODULE_DEVICE_TABLE(of, kbase_dt_ids);

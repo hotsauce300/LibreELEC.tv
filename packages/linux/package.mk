@@ -20,7 +20,7 @@ case "$LINUX" in
     PKG_VERSION="df28223b151155ab0edd8419b0347a7135443fd3" # linux-5.1-le-amlogic-v2
     PKG_SHA256=""
     PKG_URL="https://github.com/superna9999/linux/archive/$PKG_VERSION.tar.gz"
-    PKG_PATCH_DIRS="default"
+    PKG_PATCH_DIRS="default amlogic-mainline"
     ;;
   rockchip-4.4)
     PKG_VERSION="aa8bacf821e5c8ae6dd8cae8d64011c741659945"

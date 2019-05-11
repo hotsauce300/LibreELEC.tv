@@ -24,6 +24,11 @@ case "${PROJECT}-${UBOOT_SYSTEM}" in
     PKG_URL="https://github.com/hardkernel/u-boot/archive/${PKG_VERSION}.tar.gz"
     PKG_DEPENDS_TARGET+=" gcc-linaro-aarch64-elf:host gcc-linaro-arm-eabi:host"
     ;;
+  Amlogic*)
+    PKG_VERSION="2019.07-rc1"
+    PKG_SHA256="c80166bc77ac60ab60e388c7eee07b2b9aebd407588b430c1e9ebcb8baed7ddc"
+    PKG_URL="http://ftp.denx.de/pub/u-boot/u-boot-$PKG_VERSION.tar.bz2"
+    ;;
   Rockchip*)
     PKG_VERSION="8659d08d2b589693d121c1298484e861b7dafc4f"
     PKG_SHA256="3f9f2bbd0c28be6d7d6eb909823fee5728da023aca0ce37aef3c8f67d1179ec1"
